@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: aqua;
+        }
+        /* The spacificity of this selector is 10 */
+        .yellow{
+            color: yellow;
+        }
+        /* The spacificity of this selector is 10 */
+        .cred{
+            color: red;
+        }
+        /* The spacificity of this selector is 10 */
+        .cpurple{
+            color: purple;
+        }
+        
+    </style>
+</head>
+<body>
+    <p>CSS Specificity & Cascade</p>
+    <div>
+        <h1 class="yeelow cred cpurple">CSS Specificity</h1>
+    </div>
+</body>
+</html>
+
+<!-- cascade algorithm decide krta h kon si property apply hogi aur kon si nhi hogi -->
+ <!-- inline selector ka priority jyada hota h -->
