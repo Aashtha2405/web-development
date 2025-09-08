@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+         /* .box::first-line{
+            color: violet;
+         } */
+          /* .boxes *{
+            color: rgb(13, 13, 13);
+            border: 5px solid hotpink;
+          } */
+          /* [data-color="primary"]{
+            background-color: chocolate;
+          } */
+          /* p,a,.box,[data-color="primary"]{
+            padding-top: 45px;
+          } */
+           /* .box:nth-child(odd){
+            background-color: darkorchid;
+           } */
+            /* .box:nth-child(even){
+                background-color:chartreuse
+            } */
+             .boxes::before{
+                content: "I am before all the boxes";
+             }
+             .boxes::after{
+                content: "I am after all the boxes";
+             }
+             ::selection{
+                color: aqua;
+                background-color: blueviolet;
+             }
+             .box::first-letter{
+                color: rgb(252, 110, 8);
+             }
+             input::placeholder{
+                color: red;
+                font-size: medium;
+             }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">I am a first box</div>
+        <!-- <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti error dolore nostrum neque soluta, corporis ad reiciendis, laboriosam a veniam culpa quibusdam repudiandae et excepturi recusandae! Iste aperiam eligendi libero nostrum? Unde aperiam, quidem ab voluptas dolorum quis, possimus natus at qui, facilis asperiores!</div> -->
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <input type="text" placeholder="Enter your name">
+    </div>
+</body>
+</html>
