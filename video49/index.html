@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS object fit and position</title>
+    <style>
+        .container{
+            height: 466px;
+            width: 488px;
+            border: 2px solid black;
+            background-color: azure;
+            /* background-image: ; */
+        }
+        img{
+            width: 466px;
+            height: 488px;
+            object-fit: cover;
+            object-position: 10px 20px;
+            /* object-fit: contain; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images.jpeg" alt="image">
+    </div>
+</body>
+</html>
