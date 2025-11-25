@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event bubbling</title>
+    <style>
+        .child{
+            background-color: aliceblue;
+            border: 2px solid black;
+            padding: 34px;
+            margin: 34px;
+        }
+        .childcontainer{
+            background-color: limegreen;
+            border: 2px solid pink;
+            padding: 34px;
+            margin: 34px;
+        }
+        .container{
+            background-color: orchid;
+            border: 2px solid brown;
+            padding: 34px;
+            margin: 34px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="childcontainer">
+            <div class="child">
+                Aastha singh rajput
+            </section>
+        </span>
+    </div>
+    <script>
+        document.querySelector(".child").addEventListener("click",()=>{
+            alert("child was clicked")
+        })
+
+        document.querySelector(".childcontainer").addEventListener("click",()=>{
+            alert("childcontainer was clicked")
+        })
+
+        document.querySelector(".container").addEventListener("click",()=>{
+            alert("container was clicked")
+        })
+
+        function getrandomcolor(){
+            let val1 = Math.ceil(0+Math.random() * 255);
+            let val2 = Math.ceil(0+Math.random() * 255);
+            let val3 = Math.ceil(0+Math.random() * 255);
+            return `rgb(${val1},${val2},${val3})`
+        }
+        //setInterval se kuch time color change kr skte h aur kuch functionality de skte h
+        setInterval(()=>{
+            document.querySelector(".childcontainer").style.background = getrandomcolor();
+        }, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+// function Createcard(title, cName, views, monthsold, duration)
